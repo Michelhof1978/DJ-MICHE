@@ -29,7 +29,6 @@
 
 	</head>
 	<body>
-		 {% if block('carousel') is defined %}
 		<header>
 	
 			<header class="header">
@@ -576,7 +575,7 @@
 
 
 					</main>
-				
+				{% endif %}
 
                 <div class="container marketing{% if block('carousel') is not defined %} mt-5 {% endif %}">
     {#Ajouter cette classe si le carousel n'est pas défini (mt-5= marge de 5)#}
@@ -652,7 +651,7 @@
 
 
 				</main>
-{% endif %}
+
 
 				<!-- Js Plugins -->
 				<script src="{{asset ('assets/js/jquery-3.3.1.min.js')}}"></script>

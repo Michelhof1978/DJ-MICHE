@@ -29,7 +29,6 @@
 
 	</head>
 	<body>
-		 {% if block('carousel') is defined %}
 		<header>
 	
 			<header class="header">
@@ -81,7 +80,7 @@
 					</div>
 
 				</header>
-               
+                
                 
 				<main>
 					
@@ -91,7 +90,7 @@
 									<div class="col-lg-12">
 										<div class="hero__text">
 											<span>Nouveau single</span>
-											<h1>Dj Miche, the best of planet</h1>
+											<h1>Dj Miche, the best of the planet</h1>
 
 											<a href="https://www.youtube.com/watch?v=K4DyBUG242c" class="play-btn video-popup">
 												<i class="fa fa-play"></i>
@@ -576,83 +575,11 @@
 
 
 					</main>
-				
+					
+				{% endif %}
 
-                <div class="container marketing{% if block('carousel') is not defined %} mt-5 {% endif %}">
-    {#Ajouter cette classe si le carousel n'est pas défini (mt-5= marge de 5)#}
- {% block content %} {% endblock %}
- 
+                
 
-    </div>
-				<main>
-					<footer class="footer spad set-bg" data-setbg="assets/img/footer-bg.png">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-3 col-md-6">
-									<div class="footer__address">
-										<ul>
-											<li>
-												<i class="fa fa-phone"></i>
-												<p>Téléphone</p>
-												<h6>06 66 33 25 88</h6>
-											</li>
-											<li>
-												<i class="fa fa-envelope"></i>
-												<p>Email</p>
-												<h6>Dj.miche@hotmail.fr</h6>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4 offset-lg-1 col-md-6">
-									<div class="footer__social">
-										<h2>DJ Miche</h2>
-										<div class="footer__social__links">
-											<a href="#">
-												<i class="fa fa-facebook"></i>
-											</a>
-											<a href="#">
-												<i class="fa fa-twitter"></i>
-											</a>
-											<a href="#">
-												<i class="fa fa-instagram"></i>
-											</a>
-											<a href="#">
-												<i class="fa fa-dribbble"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3 offset-lg-1 col-md-6">
-									<div class="footer__newslatter">
-										<h4>Pour nous contacter</h4>
-										<form action="#">
-											<input type="text" placeholder="Email">
-											<button type="submit">
-												<i class="fa fa-send-o"></i>
-											</button>
-										</form>
-									</div>
-								</div>
-							</div>
-
-							<div class="footer__copyright__text">
-								<p>Copyright &copy;
-									<script>
-										document.write(new Date().getFullYear());
-									</script>
-									<i class="fa fa-heart" aria-hidden="true"></i>
-									by
-									<a href="" target="_blank">Michel Hoffmann</a>
-								</p>
-							</div>
-
-						</div>
-					</footer>
-
-
-				</main>
-{% endif %}
 
 				<!-- Js Plugins -->
 				<script src="{{asset ('assets/js/jquery-3.3.1.min.js')}}"></script>
