@@ -1410,10 +1410,32 @@ ol {
 		position: relative;
 	}
 	
+	
+	.slicknav_nav ul {
+		margin: 0;
+		padding: 5px 0;
+	}
+	.slicknav_nav .slicknav_row,
+	.slicknav_nav a {
+		padding: 10px 28px;
+		margin: 0;
+	}
+	.slicknav_nav a:hover {
+		border-radius: 0;
+		background: #5c00ce;
+		color: #ffffff;
+	}
+	.slicknav_nav .slicknav_row:hover {
+		border-radius: 0;
+		background: #5c00ce;
+		color: #ffffff;
+	}
 	.service__item {
 		height: auto;
 	}
-	
+	.tours__item__text {
+		padding-right: 0;
+	}
 	.countdown {
 		padding-bottom: 940px;
 	}

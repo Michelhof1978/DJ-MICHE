@@ -1413,7 +1413,9 @@ ol {
 	.service__item {
 		height: auto;
 	}
-	
+	.tours__item__text {
+		padding-right: 0;
+	}
 	.countdown {
 		padding-bottom: 940px;
 	}
