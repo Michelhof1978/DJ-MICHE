@@ -581,7 +581,7 @@
                 <div class="container marketing{% if block('carousel') is not defined %} mt-5 {% endif %}">
     {#Ajouter cette classe si le carousel n'est pas défini (mt-5= marge de 5)#}
  {% block content %} {% endblock %}
- 
+ {% block login %}
 
     </div>
 				<main>
@@ -626,7 +626,7 @@
 								<div class="col-lg-3 offset-lg-1 col-md-6">
 									<div class="footer__newslatter">
 										<h4>Pour nous contacter</h4>
-										<form action="{{ path ('contact') }}">
+										<form action="#">
 											<input type="text" placeholder="Email">
 											<button type="submit">
 												<i class="fa fa-send-o"></i>
@@ -654,7 +654,7 @@
 				</main>
 {% endif %}
 
-				<!-- Js Plugins -->
+				<!-- Plugins Js-->
 				<script src="{{asset ('assets/js/jquery-3.3.1.min.js')}}"></script>
 				<script src="{{asset ('assets/js/bootstrap.min.js')}}"></script>
 				<script src="{{asset ('assets/js/js/jquery.magnific-popup.min.js')}}"></script>
@@ -666,7 +666,7 @@
 				<script src="{{asset ('assets/js/main.js')}}"></script>
                 <script src="{{asset ('assets/js/bootstrap.bundle.js')}}"></script>
 
-				<!-- Music Plugin -->
+				<!-- Plugin Musique-->
 				<script src="{{asset ('assets/js/jquery.jplayer.min.js')}}"></script>
 				<script src="{{asset ('assets/js/jplayerInit.js')}}"></script>
 			</body>
