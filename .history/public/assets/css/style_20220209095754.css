@@ -1537,18 +1537,4 @@ text-align: center;
 
 }
 
-#modal h1 {
-	padding-top: 60px;
-}
-
-#close {
-	height: 50px;
-	width: 300px;
-	background-color: #2980b9;
-	color: #9b59b6;
-	font-family: Helvetica;
-	font-size: 20px;
-	border: none;
-	cursor: pointer;
-	margin-top: 200px;
-}
+#
